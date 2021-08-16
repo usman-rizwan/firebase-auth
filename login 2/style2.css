@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-image: url("https://www.setaswall.com/wp-content/uploads/2017/04/Material-Wallpaper-30-1600x900.jpg");
+  background-size: cover;
+  font-family: 'Style Script', cursive;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  width: 25%;
+  /* Four links of equal widths */
+  text-align: center;
+}
+
+.btn {
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+
+.navbar a.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.profile-div>img {
+  border: 4px solid grey;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.rounded {
+  width: 100px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-20s {
+  margin: 20px;
+  letter-spacing: 7px;
+  font-size: 50px;
+  font-family: 'Style Script', cursive;
+}
+.glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family: cursive;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px #e60073, 0 0 40px #6b00e6, 0 0 50px #e60073, 0 0 60px #00cbe6, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px #ffc14d, 0 0 40px #7fff4d, 0 0 50px #ff4da6, 0 0 60px #ff9d4d, 0 0 70px #5dc000, 0 0 80px #ea4dff;
+  }
+}
